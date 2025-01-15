@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('payment');
             $table->foreignId('service_id')->constrained();
             $table->foreignId('user_id')->constrained();
+            $table->timestamps();
         });
     }
 
